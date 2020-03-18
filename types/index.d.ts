@@ -145,7 +145,7 @@ export function assembleProtocol(filePath: string, callback: Callback<object>): 
 export function createFileDecoder(fileName: string, opts?: Partial<DecoderOptions>): streams.BlockDecoder;
 export function createFileEncoder(filePath: string, schema: Schema, opts?: Partial<EncoderOptions>): streams.BlockEncoder;
 export function createBlobEncoder(schema: Schema, opts?: Partial<EncoderOptions>): stream.Duplex;
-export function createBlobDecoder(blob: Blob, opts?: Partial<DecoderOptions>): streams.BlockDecoder;
+export function createBlobDecoder(blob: any, opts?: Partial<DecoderOptions>): streams.BlockDecoder;
 export function discoverProtocol(transport: Service.Transport, options: any, callback: Callback<any>): void;
 export function discoverProtocol(transport: Service.Transport, callback: Callback<any>): void;
 export function extractFileHeader(filePath: string, options?: any): void;
